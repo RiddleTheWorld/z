@@ -44,7 +44,7 @@ jobs:
           Copy-Item FFXIVRPC/bin/x64/Release/FFXIVRPC.dll staging/FFXIVRPC/
           Copy-Item FFXIVRPC/FFXIVRPC.json staging/FFXIVRPC/
           Copy-Item FFXIVRPC/Assets/*.png staging/FFXIVRPC/Assets/
-          Compress-Archive -Path staging/FFXIVRPC -DestinationPath FFXIVRPC.zip -Force
+          Get-ChildItem -Path staging/FFXIVRPC | Compress-Archive -DestinationPath FFXIVRPC.zip -Force
 
       - name: Release
         uses: softprops/action-gh-release@v2
