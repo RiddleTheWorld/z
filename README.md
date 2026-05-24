@@ -12,6 +12,18 @@ A Dalamud plugin that publishes your FFXIV status to Discord Rich Presence.
 
 ## Setup
 
+### Custom Plugin Repository (Recommended)
+
+1. Open Dalamud Plugin Installer (`/xlplugins`)
+2. Click **Settings** → **Experimental** → **Custom Plugin Repositories**
+3. Paste this URL and click the **+** button:
+   ```
+   https://raw.githubusercontent.com/earendil-works/ffxiv-rpc/main/repo.json
+   ```
+4. Search for **FFXIV RPC** and install
+
+### Manual Install
+
 1. Build in Release.
 2. Copy output to `%APPDATA%\XIVLauncher\installedPlugins\FFXIVRPC\`.
 3. Enable in `/xlplugins`.
