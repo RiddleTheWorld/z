@@ -20,10 +20,20 @@ jobs:
       - name: Download Dalamud
         run: |
           Invoke-WebRequest -Uri https://goatcorp.github.io/dalamud-distrib/stg/latest.zip -OutFile latest.zip
-          Expand-Archive -Path latest.zip -DestinationPath "C:\Dalamud"
+          Expand-Archive -Path latest.zip -DestinationPath "C:\Dalamud" -Force
+          Get-ChildItem -Path "C:\Dalamud" -Recurse -Depth 2 | Select-Object FullName
+
+      - name: Find Dalamud path
+        id: dalamud
+        run: |
+          $dll = Get-ChildItem -Path "C:\Dalamud" -Recurse -Filter "Dalamud.dll" | Select-Object -First 1
+          if (-not $dll) { Write-Error "Dalamud.dll not found"; exit 1 }
+          $path = $dll.DirectoryName
+          Write-Output "path=$path" >> $env:GITHUB_OUTPUT
+          Write-Output "Found Dalamud at $path"
 
       - name: Build Release
-        run: dotnet build FFXIVRPC.sln -c Release -p:DalamudLibPath="C:\Dalamud\hooks\dev"
+        run: dotnet build FFXIVRPC.sln -c Release -p:DalamudLibPath="${{ steps.dalamud.outputs.path }}"
 
       - name: Package
         run: |
