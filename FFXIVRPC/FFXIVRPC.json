@@ -5,5 +5,6 @@
   "Punchline": "Display your FFXIV PvP rank and live match stats in Discord Rich Presence.",
   "Description": "Shows Crystalline Conflict rank, live match K/D, character info, and location in Discord Rich Presence. Configure with /ffxivrpc.",
   "ApplicableVersion": "any",
-  "Tags": ["discord", "rpc", "pvp", "crystalline-conflict", "live-match"]
+  "Tags": ["discord", "rpc", "pvp", "crystalline-conflict", "live-match"],
+  "AssemblyVersion": "0.1.0.0"
 }
