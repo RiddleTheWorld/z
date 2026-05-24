@@ -1,0 +1,23 @@
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+  <PropertyGroup>
+    <Version>0.1.0</Version>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <Authors>FFXIV RPC Contributors</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DiscordRichPresence" Version="1.2.1.24" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="FFXIVRPC.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\*.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+
+</Project>
