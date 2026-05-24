@@ -28,7 +28,7 @@ jobs:
       - name: Package
         run: |
           New-Item -ItemType Directory -Path staging/FFXIVRPC/Assets -Force
-          Copy-Item FFXIVRPC/bin/Release/FFXIVRPC.dll staging/FFXIVRPC/
+          Copy-Item FFXIVRPC/bin/x64/Release/FFXIVRPC.dll staging/FFXIVRPC/
           Copy-Item FFXIVRPC/FFXIVRPC.json staging/FFXIVRPC/
           Copy-Item FFXIVRPC/Assets/*.png staging/FFXIVRPC/Assets/
           Compress-Archive -Path staging/FFXIVRPC -DestinationPath FFXIVRPC.zip -Force
