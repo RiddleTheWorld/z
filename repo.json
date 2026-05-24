@@ -5,7 +5,7 @@
     "Punchline": "Display your FFXIV PvP rank and live match stats in Discord Rich Presence.",
     "Description": "Shows Crystalline Conflict rank, live match K/D, character info, and location in Discord Rich Presence. Configure with /ffxivrpc.",
     "InternalName": "FFXIVRPC",
-    "AssemblyVersion": "0.1.0.0",
+    "AssemblyVersion": "0.1.1.0",
     "TestingAssemblyVersion": null,
     "RepoUrl": "https://github.com/RiddleTheWorld/z",
     "ApplicableVersion": "any",
@@ -20,10 +20,10 @@
     "AcceptsFeedback": false,
     "IconUrl": "",
     "ImageUrls": [],
-    "DownloadLinkInstall": "https://github.com/RiddleTheWorld/z/releases/download/v0.1.0/FFXIVRPC.zip",
-    "DownloadLinkTesting": "https://github.com/RiddleTheWorld/z/releases/download/v0.1.0/FFXIVRPC.zip",
-    "DownloadLinkUpdate": "https://github.com/RiddleTheWorld/z/releases/download/v0.1.0/FFXIVRPC.zip",
+    "DownloadLinkInstall": "https://github.com/RiddleTheWorld/z/releases/download/v0.1.1/FFXIVRPC.zip",
+    "DownloadLinkTesting": "https://github.com/RiddleTheWorld/z/releases/download/v0.1.1/FFXIVRPC.zip",
+    "DownloadLinkUpdate": "https://github.com/RiddleTheWorld/z/releases/download/v0.1.1/FFXIVRPC.zip",
     "DownloadCount": 0,
-    "LastUpdate": 1753372800
+    "LastUpdate": 1779638887
   }
 ]
